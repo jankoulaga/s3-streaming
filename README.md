@@ -1,4 +1,4 @@
-# s3-streaming
+# Play Framework S3 upload
 
 This library uses Play 2.x.x Iteratee, Enumeratee features to issue multiple multipart requests to upload a file to Amazon S3 buckets, allowing you to send enormous amounts of data through the wire without using a lot of resources.
 
