@@ -2,11 +2,11 @@
 
 This library uses Play 2.x.x Iteratee, Enumeratee features to issue multiple multipart requests to upload a file to Amazon S3 buckets.
 
-Under the hood it uses amazonaws Java SDK to issue those calls, and Play libraries(as provided) to handle the whole Iteratee, Enumeratee magic.
+Under the hood it uses AmazonAWS Java SDK to issue those calls, and Play libraries(as provided) to handle the whole Iteratee, Enumeratee magic.
 
 If you need to customise it to your version of Scala/Play just change the ```scalaVersion``` and ```playVersion``` vals in build.sbt
 
-Main idea was to be able to use any type of an ```Enumerator``` map it to an array of bytes and send it to your S3 bucket.
+Main idea was to be able to use any type of an ```Enumerator```, map it to an array of bytes if you have to, and send it to your S3 bucket.
 
 There's already a case class ```S3Upload``` where you can pass your bucket name, file name to be stored in a bucket, AWS credentials and desired chunk size, but if you want to use a different approach, just extend the S3 trait.
 
