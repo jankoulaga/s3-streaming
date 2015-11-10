@@ -1,6 +1,6 @@
 # s3-streaming
 
-This library uses Play 2.x.x Iteratee, Enumeratee features to issue multiple multipart requests to upload a file to Amazon S3 buckets.
+This library uses Play 2.x.x Iteratee, Enumeratee features to issue multiple multipart requests to upload a file to Amazon S3 buckets, allowing you to send enormous amounts of data through the wire without using a lot of resources.
 
 Under the hood it uses AmazonAWS Java SDK to issue those calls, and Play libraries(as provided) to handle the whole Iteratee, Enumeratee magic.
 
